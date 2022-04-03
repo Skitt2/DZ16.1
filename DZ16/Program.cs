@@ -36,7 +36,7 @@ namespace DZ16
 
             string jsonString = JsonSerializer.Serialize(products, options);
 
-            using (StreamWriter sw= new StreamWriter("Products.json"))
+            using (StreamWriter sw= new StreamWriter("../../../Products.json"))
             {
                 sw.WriteLine(jsonString);
             }
